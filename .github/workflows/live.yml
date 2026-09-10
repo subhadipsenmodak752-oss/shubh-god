@@ -13,6 +13,12 @@ jobs:
       - name: Install FFmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
+      - name: Install gdown
+        run: pipx install gdown
+
+      - name: Download Video
+        run: gdown --id 1bSf_6Infx0jqiSTWpq6tst-pFbaqnHsi -O video.mp4
+
       - name: Start Streaming Loop
         run: |
           chmod +x stream.sh
