@@ -17,7 +17,7 @@ jobs:
         run: pipx install gdown
 
       - name: Download Video
-        run: gdown 1bSf_6Infx0jqiSTWpq6tst-pFbaqnHsi -O video.mp4
+        run: gdown 1cbTWtjuODy93JSZ8tqLLDa7n_janC6ym -O video.mp4
 
       - name: Start Streaming Loop
         run: |
