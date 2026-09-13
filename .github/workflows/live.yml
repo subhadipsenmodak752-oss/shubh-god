@@ -23,3 +23,7 @@ jobs:
         run: |
           chmod +x stream.sh
           ./stream.sh
+- name: Start Streaming Loop
+        run: |
+          chmod +x stream.sh
+          ./stream.sh "${{ secrets.YOUTUBE_STREAM_KEY }}"
